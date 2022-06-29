@@ -1,0 +1,15 @@
+{
+  "name": "@mrtnvh/openapi-monorepo-demo",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run --parallel --scope @mrtnvh/*-sdk dev && lerna run --parallel --scope @mrtnvh/*-frontend --scope @mrtnvh/*-mock dev",
+    "lint": "lerna run --parallel lint",
+    "docs": "lerna run --parallel docs"
+  },
+  "devDependencies": {
+    "lerna": "^5.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
