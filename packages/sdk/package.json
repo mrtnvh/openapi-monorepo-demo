@@ -5,6 +5,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "npm run generate",
+    "build": "npm run generate",
     "generate": "openapi --input ../openapi/petstore.yml --output ./src && tsc"
   },
   "author": "@mrtnvh",
